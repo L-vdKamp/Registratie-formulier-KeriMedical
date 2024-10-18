@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOUCH® KeriMedical Registratieformulier</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+</head>
+<body>
+    <main class="container">
+        <h2>TOUCH® KeriMedical Registratieformulier</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <fieldset>
+                <legend>Algemene Informatie</legend>
+                <label for="first-name">Voornaam:</label>
+                <input type="text" id="first-name" name="first-name" required><br><br>
+
+                <label for="last-name">Achternaam:</label>
+                <input type="text" id="last-name" name="last-name" required><br><br>
+
+                <label for="passport-name">Namen volgens paspoort:</label>
+                <input type="text" id="passport-name" name="passport-name" required><br><br>
+
+                <label for="birth-date">Geboortedatum:</label>
+                <input type="date" id="birth-date" name="birth-date" required><br><br>
+
+                <label for="flying-blue">Flying Blue nummer (optioneel):</label>
+                <input type="text" id="flying-blue" name="flying-blue"><br><br>
+
+                <label for="title">Titel:</label>
+                <input type="text" id="title" name="title"><br><br>
+
+                <label for="hospital">Ziekenhuisnaam:</label>
+                <input type="text" id="hospital" name="hospital"><br><br>
+
+                <label for="country">Land:</label>
+                <input type="text" id="country" name="country"><br><br>
+
+                <label for="email">E-mailadres:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Telefoonnummer:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Orthopedische Details</legend>
+                <label for="specialty">Bent u een orthopedisch of plastisch chirurg?</label>
+                <select id="specialty" name="specialty">
+                    <option value="orthopaedic">Orthopedisch</option>
+                    <option value="plastic">Plastisch</option>
+                </select><br><br>
+
+                <label for="hand-surgeons">Aantal handchirurgen in de afdeling:</label>
+                <input type="number" id="hand-surgeons" name="hand-surgeons"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gebruik en Training</legend>
+                <label>Bent u een CMC1-gebruiker?</label><br>
+                <input type="radio" id="cmc1-yes" name="cmc1-user" value="yes">
+                <label for="cmc1-yes">Ja</label><br>
+                <input type="radio" id="cmc1-no" name="cmc1-user" value="no">
+                <label for="cmc1-no">Nee</label><br><br>
+
+                <label for="implanted-number">Aantal reeds geïmplanteerde CMC1-modellen:</label>
+                <input type="number" id="implanted-number" name="implanted-number"><br><br>
+
+                <label for="first-date">Datum van de eerste geplande TOUCH®-cases:</label>
+                <input type="date" id="first-date" name="first-date"><br><br>
+
+                <label for="training-objective">Doel(en) van de training:</label><br>
+                <input type="checkbox" id="discovering" name="training-objective" value="discovering">
+                <label for="discovering">Ontdekken</label><br>
+                <input type="checkbox" id="learning" name="training-objective" value="learning">
+                <label for="learning">Leren</label><br>
+                <input type="checkbox" id="deepening" name="training-objective" value="deepening">
+                <label for="deepening">Verdiepen</label><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Expertise</legend>
+                <label for="tpz-cmc1-ratio">Verhouding TPZ vs CMC1 in de afdeling:</label>
+                <input type="text" id="tpz-cmc1-ratio" name="tpz-cmc1-ratio"><br><br>
+
+                <label>Protheses geregistreerd in het ziekenhuis:</label><br>
+                <input type="checkbox" id="capsula" name="prosthesis" value="capsula">
+                <label for="capsula">CAPSULA</label><br>
+                <input type="checkbox" id="rehab" name="prosthesis" value="rehab">
+                <label for="rehab">REHAB</label><br>
+                <input type="checkbox" id="revision" name="prosthesis" value="revision">
+                <label for="revision">REVISION</label><br>
+                <input type="checkbox" id="surgical-approach" name="prosthesis" value="surgical-approach">
+                <label for="surgical-approach">Chirurgische Benadering STT</label><br>
+                <input type="checkbox" id="z-deformity" name="prosthesis" value="z-deformity">
+                <label for="z-deformity">Z-deformatie</label><br>
+                <input type="checkbox" id="return-to-work" name="prosthesis" value="return-to-work">
+                <label for="return-to-work">Terug naar Werk</label><br>
+                <input type="checkbox" id="other" name="prosthesis" value="other">
+                <label for="other">Anders</label><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Aanvullende Informatie</legend>
+                <label for="tpz-year">Hoeveel TPZ-operaties voert u per jaar uit?</label>
+                <input type="number" id="tpz-year" name="tpz-year"><br><br>
+
+                <label for="dietary-restrictions">Dieetbeperkingen?</label>
+                <input type="text" id="dietary-restrictions" name="dietary-restrictions"><br><br>
+            </fieldset>
+
+            <input type="submit" value="Verzenden">
+        </form>
+    </main>
+</body>
+</html>
